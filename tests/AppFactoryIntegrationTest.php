@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace AsgrimTest\MiniMezzio;
 
 use Asgrim\MiniMezzio\AppFactory;
+use Laminas\Diactoros\Response\TextResponse;
 use Laminas\ServiceManager\ServiceManager;
 use Mezzio\Router\FastRouteRouter;
 use Mezzio\Router\Middleware\DispatchMiddleware;
 use Mezzio\Router\Middleware\RouteMiddleware;
 use PHPUnit\Framework\TestCase;
-use Laminas\Diactoros\Response\TextResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+
+use function ob_get_clean;
+use function ob_start;
+use function uniqid;
 
 /** @coversNothing */
 final class AppFactoryIntegrationTest extends TestCase
@@ -25,10 +29,10 @@ final class AppFactoryIntegrationTest extends TestCase
      *
      * @runInSeparateProcess
      */
-    public function testCreatesAndRunsApplication() : void
+    public function testCreatesAndRunsApplication(): void
     {
         $expectedContent = uniqid('expectedContent', true);
-        $container = new ServiceManager();
+        $container       = new ServiceManager();
         $container->setFactory(
             self::HANDLER_CONTAINER_KEY,
             static function () use ($expectedContent) {
