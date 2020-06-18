@@ -5,10 +5,8 @@ declare(strict_types=1);
 namespace Asgrim\MiniMezzio;
 
 use Laminas\Diactoros\Response;
-use Laminas\Diactoros\ServerRequest;
 use Laminas\Diactoros\ServerRequestFactory;
 use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
-use Laminas\HttpHandlerRunner\Emitter\SapiStreamEmitter;
 use Laminas\HttpHandlerRunner\RequestHandlerRunner;
 use Laminas\Stratigility\MiddlewarePipe;
 use Mezzio\Application;
@@ -33,9 +31,10 @@ class AppFactory
         ContainerInterface $container,
         RouterInterface $router,
         bool $developmentMode = false
-    ) : Application {
+    ): Application {
         $middlewarePipe = new MiddlewarePipe();
-        $app = new Application(
+
+        return new Application(
             new MiddlewareFactory(new MiddlewareContainer($container)),
             $middlewarePipe,
             new RouteCollector($router),
@@ -44,14 +43,12 @@ class AppFactory
                 new SapiEmitter(),
                 [ServerRequestFactory::class, 'fromGlobals'],
                 new ServerRequestErrorResponseGenerator(
-                    static function () : Response {
+                    static function (): Response {
                         return new Response();
                     },
                     $developmentMode
                 )
             )
         );
-
-        return $app;
     }
 }
