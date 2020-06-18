@@ -1,0 +1,40 @@
+{
+    "name": "asgrim/mini-mezzio",
+    "description": "Minimal Application Factory for Mezzio",
+    "type": "library",
+    "require": {
+        "php": "7.4.*",
+        "laminas/laminas-diactoros": "^2.3",
+        "laminas/laminas-httphandlerrunner": "^1.2",
+        "laminas/laminas-stratigility": "^3.2",
+        "mezzio/mezzio": "^3.2",
+        "mezzio/mezzio-router": "^3.1",
+        "psalm/plugin-phpunit": "^0.10.1",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^8.0",
+        "phpunit/phpunit": "^9.2",
+        "vimeo/psalm": "^3.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Titcumb",
+            "email": "james@asgrim.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Asgrim\\MiniMezzio\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsgrimTest\\MiniMezzio\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
