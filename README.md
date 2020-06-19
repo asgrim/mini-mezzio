@@ -65,7 +65,7 @@ You can use the PHP built-in web server to check this works. Spin this up with:
 $ php -S 0.0.0.0:8080 -t public public/index.php
 ```
 
-Now if you visit http://localhost:8080 in your browser, you should see the text
+Now if you visit http://localhost:8080/hello-world in your browser, you should see the text
 `Hello world!` displayed. Now you're ready to make middleware in minutes!
 
 ## Use the container for pipeline and endpoints
