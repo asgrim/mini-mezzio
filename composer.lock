@@ -512,20 +512,20 @@
         },
         {
             "name": "fig/http-message-util",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message-util.git",
-                "reference": "3242caa9da7221a304b8f84eb9eaddae0a7cf422"
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message-util/zipball/3242caa9da7221a304b8f84eb9eaddae0a7cf422",
-                "reference": "3242caa9da7221a304b8f84eb9eaddae0a7cf422",
+                "url": "https://api.github.com/repos/php-fig/http-message-util/zipball/9d94dc0154230ac39e5bf89398b324a86f63f765",
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 || ^7.0"
+                "php": "^5.3 || ^7.0 || ^8.0"
             },
             "suggest": {
                 "psr/http-message": "The package containing the PSR-7 interfaces"
@@ -548,7 +548,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Utility classes and constants for use with PSR-7 (psr/http-message)",
@@ -560,7 +560,7 @@
                 "request",
                 "response"
             ],
-            "time": "2020-02-05T20:36:27+00:00"
+            "time": "2020-11-24T22:02:12+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -4422,25 +4422,25 @@
         },
         {
             "name": "mezzio/mezzio-fastroute",
-            "version": "3.0.3",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-fastroute.git",
-                "reference": "3e7d8ade90c3c2ef68a1f798c11c0c396ed40929"
+                "reference": "02fb02ad21e948aa955f871829eb15ac35ee449a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/3e7d8ade90c3c2ef68a1f798c11c0c396ed40929",
-                "reference": "3e7d8ade90c3c2ef68a1f798c11c0c396ed40929",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/02fb02ad21e948aa955f871829eb15ac35ee449a",
+                "reference": "02fb02ad21e948aa955f871829eb15ac35ee449a",
                 "shasum": ""
             },
             "require": {
                 "fig/http-message-util": "^1.1.2",
                 "laminas/laminas-stdlib": "^2.0 || ^3.1",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "mezzio/mezzio-router": "^3.0",
+                "mezzio/mezzio-router": "^3.2",
                 "nikic/fast-route": "^1.2",
-                "php": "^7.1",
+                "php": "^7.3 || ~8.0.0",
                 "psr/container": "^1.0",
                 "psr/http-message": "^1.0.1"
             },
@@ -4448,22 +4448,18 @@
                 "container-interop/container-interop": "<1.2.0"
             },
             "replace": {
-                "zendframework/zend-expressive-fastroute": "self.version"
+                "zendframework/zend-expressive-fastroute": "^3.0.3"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "laminas/laminas-diactoros": "^1.7.1",
                 "laminas/laminas-stratigility": "^3.0",
                 "malukenho/docheader": "^0.1.6",
-                "mikey179/vfsstream": "^1.6.5",
-                "phpunit/phpunit": "^7.0.2"
+                "mikey179/vfsstream": "^1.6.7",
+                "phpunit/phpunit": "^9.4.1"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev",
-                    "dev-develop": "3.1.x-dev"
-                },
                 "laminas": {
                     "config-provider": "Mezzio\\Router\\FastRouteRouter\\ConfigProvider"
                 }
@@ -4488,7 +4484,13 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2019-12-31T15:43:56+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-12-21T02:11:53+00:00"
         },
         {
             "name": "nikic/fast-route",
