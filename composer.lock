@@ -998,16 +998,16 @@
         },
         {
             "name": "mezzio/mezzio-router",
-            "version": "3.2.1",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "73ac2b7b1d910ae724c255a74c30889c6c2665ca"
+                "reference": "42659ecc8db2e60ca3dde413507a98d879031a37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/73ac2b7b1d910ae724c255a74c30889c6c2665ca",
-                "reference": "73ac2b7b1d910ae724c255a74c30889c6c2665ca",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/42659ecc8db2e60ca3dde413507a98d879031a37",
+                "reference": "42659ecc8db2e60ca3dde413507a98d879031a37",
                 "shasum": ""
             },
             "require": {
@@ -1025,7 +1025,10 @@
                 "laminas/laminas-coding-standard": "~2.1.0",
                 "malukenho/docheader": "^0.1.6",
                 "phpspec/prophecy": "^1.9",
-                "phpunit/phpunit": "^9.4.1"
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.4.1",
+                "psalm/plugin-phpunit": "^0.15.0",
+                "vimeo/psalm": "^4.3"
             },
             "suggest": {
                 "mezzio/mezzio-aurarouter": "^3.0 to use the Aura.Router routing adapter",
@@ -1063,7 +1066,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-10-24T15:19:53+00:00"
+            "time": "2021-01-06T16:46:13+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
