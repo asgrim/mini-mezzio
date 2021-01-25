@@ -1,11 +1,16 @@
 <?xml version="1.0"?>
-<phpunit bootstrap="vendor/autoload.php" colors="true">
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+>
   <testsuite name="Test Suite">
     <directory>./tests</directory>
   </testsuite>
-  <filter>
-    <whitelist>
+  <coverage>
+    <include>
       <directory>./src</directory>
-    </whitelist>
-  </filter>
+    </include>
+  </coverage>
 </phpunit>
