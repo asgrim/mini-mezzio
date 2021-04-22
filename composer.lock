@@ -444,16 +444,16 @@
         },
         {
             "name": "mezzio/mezzio",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio.git",
-                "reference": "3d18f3dbafd350b3620fe292f5b72ceccf59b54f"
+                "reference": "cd61b6e0852bd7c6b14cb54b6a2da00d3375b138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/3d18f3dbafd350b3620fe292f5b72ceccf59b54f",
-                "reference": "3d18f3dbafd350b3620fe292f5b72ceccf59b54f",
+                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/cd61b6e0852bd7c6b14cb54b6a2da00d3375b138",
+                "reference": "cd61b6e0852bd7c6b14cb54b6a2da00d3375b138",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +549,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-01-24T21:16:27+00:00"
+            "time": "2021-04-20T17:04:00+00:00"
         },
         {
             "name": "mezzio/mezzio-router",
