@@ -1860,16 +1860,16 @@
         },
         {
             "name": "mezzio/mezzio-fastroute",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-fastroute.git",
-                "reference": "02fb02ad21e948aa955f871829eb15ac35ee449a"
+                "reference": "faa586b35dc76231a5dce736227046ccbee2b5f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/02fb02ad21e948aa955f871829eb15ac35ee449a",
-                "reference": "02fb02ad21e948aa955f871829eb15ac35ee449a",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/faa586b35dc76231a5dce736227046ccbee2b5f1",
+                "reference": "faa586b35dc76231a5dce736227046ccbee2b5f1",
                 "shasum": ""
             },
             "require": {
@@ -1894,7 +1894,10 @@
                 "laminas/laminas-stratigility": "^3.0",
                 "malukenho/docheader": "^0.1.6",
                 "mikey179/vfsstream": "^1.6.7",
-                "phpunit/phpunit": "^9.4.1"
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.4.1",
+                "psalm/plugin-phpunit": "^0.15.1",
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
@@ -1936,7 +1939,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-12-21T02:11:53+00:00"
+            "time": "2021-04-19T21:45:49+00:00"
         },
         {
             "name": "myclabs/deep-copy",
