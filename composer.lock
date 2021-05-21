@@ -444,16 +444,16 @@
         },
         {
             "name": "mezzio/mezzio",
-            "version": "3.4.1",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio.git",
-                "reference": "b8589fc3cc5424cdcbecfebf647c6595d22daf5a"
+                "reference": "1941d51b6a29928f9da3328aba67d7bf8d9a4dc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/b8589fc3cc5424cdcbecfebf647c6595d22daf5a",
-                "reference": "b8589fc3cc5424cdcbecfebf647c6595d22daf5a",
+                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/1941d51b6a29928f9da3328aba67d7bf8d9a4dc5",
+                "reference": "1941d51b6a29928f9da3328aba67d7bf8d9a4dc5",
                 "shasum": ""
             },
             "require": {
@@ -548,20 +548,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-05-10T19:22:24+00:00"
+            "time": "2021-05-20T17:36:56+00:00"
         },
         {
             "name": "mezzio/mezzio-router",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "42659ecc8db2e60ca3dde413507a98d879031a37"
+                "reference": "da7adc38450bc6db9ec583c0f3fa773f09bb02ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/42659ecc8db2e60ca3dde413507a98d879031a37",
-                "reference": "42659ecc8db2e60ca3dde413507a98d879031a37",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/da7adc38450bc6db9ec583c0f3fa773f09bb02ce",
+                "reference": "da7adc38450bc6db9ec583c0f3fa773f09bb02ce",
                 "shasum": ""
             },
             "require": {
@@ -628,7 +628,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-01-06T16:46:13+00:00"
+            "time": "2021-05-13T20:17:47+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
