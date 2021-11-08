@@ -558,22 +558,21 @@
         },
         {
             "name": "mezzio/mezzio-router",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "f36f7149db1c17c0bdff86ddcfea66ae22b1737f"
+                "reference": "08d52bdad8a9e89ef482a10516264563bd596c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/f36f7149db1c17c0bdff86ddcfea66ae22b1737f",
-                "reference": "f36f7149db1c17c0bdff86ddcfea66ae22b1737f",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/08d52bdad8a9e89ef482a10516264563bd596c93",
+                "reference": "08d52bdad8a9e89ef482a10516264563bd596c93",
                 "shasum": ""
             },
             "require": {
                 "fig/http-message-util": "^1.1.2",
-                "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^7.3 || ~8.0.0",
+                "php": "^7.3 || ~8.0.0 || ~8.1.0",
                 "psr/container": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0.1",
@@ -581,10 +580,8 @@
                 "webmozart/assert": "^1.10"
             },
             "conflict": {
-                "mezzio/mezzio": "<3.5"
-            },
-            "replace": {
-                "zendframework/zend-expressive-router": "^3.1.1"
+                "mezzio/mezzio": "<3.5",
+                "zendframework/zend-expressive-router": "*"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.2.0",
@@ -640,7 +637,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-07-25T13:17:10+00:00"
+            "time": "2021-09-14T04:06:31+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
