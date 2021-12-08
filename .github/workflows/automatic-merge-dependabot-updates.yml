@@ -11,7 +11,7 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Sleep to allow builds to be queued up
-        run: sleep 1m
+        run: sleep 20s
         shell: bash
       - name: Dependabot metadata
         id: metadata
