@@ -377,16 +377,16 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "bf180a382393e7db5c1e8d0f2ec0c4af9c724baf"
+                "reference": "88bf037259869891afce6504cacc4f8a07b24d0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/bf180a382393e7db5c1e8d0f2ec0c4af9c724baf",
-                "reference": "bf180a382393e7db5c1e8d0f2ec0c4af9c724baf",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/88bf037259869891afce6504cacc4f8a07b24d0f",
+                "reference": "88bf037259869891afce6504cacc4f8a07b24d0f",
                 "shasum": ""
             },
             "require": {
@@ -435,7 +435,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-09-03T17:53:30+00:00"
+            "time": "2021-12-21T14:34:37+00:00"
         },
         {
             "name": "mezzio/mezzio",
@@ -548,22 +548,22 @@
         },
         {
             "name": "mezzio/mezzio-router",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "08d52bdad8a9e89ef482a10516264563bd596c93"
+                "reference": "27075d3e9b407791abf7ba5e62954a59be4b18df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/08d52bdad8a9e89ef482a10516264563bd596c93",
-                "reference": "08d52bdad8a9e89ef482a10516264563bd596c93",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/27075d3e9b407791abf7ba5e62954a59be4b18df",
+                "reference": "27075d3e9b407791abf7ba5e62954a59be4b18df",
                 "shasum": ""
             },
             "require": {
                 "fig/http-message-util": "^1.1.2",
-                "php": "^7.3 || ~8.0.0 || ~8.1.0",
-                "psr/container": "^1.0",
+                "php": "^7.4 || ~8.0.0 || ~8.1.0",
+                "psr/container": "^1.0 || ^2.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0.1",
                 "psr/http-server-middleware": "^1.0",
@@ -574,14 +574,14 @@
                 "zendframework/zend-expressive-router": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.2.0",
+                "laminas/laminas-coding-standard": "~2.3.0",
                 "laminas/laminas-diactoros": "^2.6",
                 "laminas/laminas-stratigility": "^3.4",
                 "phpspec/prophecy": "^1.9",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.4.1",
+                "phpunit/phpunit": "^9.5.11",
                 "psalm/plugin-phpunit": "^0.15.0",
-                "vimeo/psalm": "^4.3"
+                "vimeo/psalm": "^4.17"
             },
             "suggest": {
                 "mezzio/mezzio-aurarouter": "^3.0 to use the Aura.Router routing adapter",
@@ -627,7 +627,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-09-14T04:06:31+00:00"
+            "time": "2022-01-06T16:27:49+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
@@ -2018,16 +2018,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.6.2",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "6fe0842909638ca6bea8401b7e8168fb154bffb5"
+                "reference": "bcd869e2fe88d567800057c1434f2380354fe325"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/6fe0842909638ca6bea8401b7e8168fb154bffb5",
-                "reference": "6fe0842909638ca6bea8401b7e8168fb154bffb5",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/bcd869e2fe88d567800057c1434f2380354fe325",
+                "reference": "bcd869e2fe88d567800057c1434f2380354fe325",
                 "shasum": ""
             },
             "require": {
@@ -2038,8 +2038,8 @@
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.3.0",
-                "phpbench/phpbench": "^0.17.1",
-                "phpunit/phpunit": "~9.3.7",
+                "phpbench/phpbench": "^1.0",
+                "phpunit/phpunit": "^9.3.7",
                 "psalm/plugin-phpunit": "^0.16.0",
                 "vimeo/psalm": "^4.7"
             },
@@ -2073,20 +2073,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-12-07T21:06:58+00:00"
+            "time": "2022-01-21T15:50:46+00:00"
         },
         {
             "name": "mezzio/mezzio-fastroute",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-fastroute.git",
-                "reference": "c323692aa34eaca3e94311d5fcc5c5ca347ad401"
+                "reference": "1ee4c1f9d7f57c1de08e16e16cb4b7a46a950ecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/c323692aa34eaca3e94311d5fcc5c5ca347ad401",
-                "reference": "c323692aa34eaca3e94311d5fcc5c5ca347ad401",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/1ee4c1f9d7f57c1de08e16e16cb4b7a46a950ecb",
+                "reference": "1ee4c1f9d7f57c1de08e16e16cb4b7a46a950ecb",
                 "shasum": ""
             },
             "require": {
@@ -2094,8 +2094,8 @@
                 "laminas/laminas-stdlib": "^2.0 || ^3.1",
                 "mezzio/mezzio-router": "^3.7",
                 "nikic/fast-route": "^1.2",
-                "php": "^7.3 || ~8.0.0 || ~8.1.0",
-                "psr/container": "^1.0",
+                "php": "^7.4 || ~8.0.0 || ~8.1.0",
+                "psr/container": "^1.0 || ^2.0",
                 "psr/http-message": "^1.0.1"
             },
             "conflict": {
@@ -2152,7 +2152,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-12-08T06:56:05+00:00"
+            "time": "2022-01-22T15:26:25+00:00"
         },
         {
             "name": "myclabs/deep-copy",
