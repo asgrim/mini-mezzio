@@ -16,7 +16,7 @@
         "laminas/laminas-servicemanager": "^3.10",
         "mezzio/mezzio-fastroute": "^3.4",
         "phpunit/phpunit": "^9.5",
-        "psalm/plugin-phpunit": "^0.16.1",
+        "psalm/plugin-phpunit": "^0.16.1 || ^0.17.0",
         "vimeo/psalm": "^4.16"
     },
     "license": "MIT",
