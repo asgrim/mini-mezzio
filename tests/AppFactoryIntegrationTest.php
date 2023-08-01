@@ -37,11 +37,8 @@ final class AppFactoryIntegrationTest extends TestCase
             self::HANDLER_CONTAINER_KEY,
             static function () use ($expectedContent) {
                 return new class ($expectedContent) implements RequestHandlerInterface {
-                    private string $contentToReturn;
-
-                    public function __construct(string $contentToReturn)
+                    public function __construct(private string $contentToReturn)
                     {
-                        $this->contentToReturn = $contentToReturn;
                     }
 
                     public function handle(ServerRequestInterface $request): ResponseInterface
@@ -49,7 +46,7 @@ final class AppFactoryIntegrationTest extends TestCase
                         return new TextResponse($this->contentToReturn, 201);
                     }
                 };
-            }
+            },
         );
         $router = new FastRouteRouter();
 
