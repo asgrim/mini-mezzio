@@ -30,7 +30,7 @@ class AppFactory
     public static function create(
         ContainerInterface $container,
         RouterInterface $router,
-        bool $developmentMode = false
+        bool $developmentMode = false,
     ): Application {
         $middlewarePipe = new MiddlewarePipe();
 
@@ -46,9 +46,9 @@ class AppFactory
                     static function (): Response {
                         return new Response();
                     },
-                    $developmentMode
-                )
-            )
+                    $developmentMode,
+                ),
+            ),
         );
     }
 }
