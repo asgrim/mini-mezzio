@@ -211,20 +211,20 @@
         },
         {
             "name": "laminas/laminas-httphandlerrunner",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
-                "reference": "ab1fe48f1c367953d7e8f5cfbaf902672551d524"
+                "reference": "df88be883823fb479fc901ea3354b09ced7cb2ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/ab1fe48f1c367953d7e8f5cfbaf902672551d524",
-                "reference": "ab1fe48f1c367953d7e8f5cfbaf902672551d524",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/df88be883823fb479fc901ea3354b09ced7cb2ef",
+                "reference": "df88be883823fb479fc901ea3354b09ced7cb2ef",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.1.0 || ~8.2.0",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
                 "psr/http-message": "^1.0 || ^2.0",
                 "psr/http-message-implementation": "^1.0 || ^2.0",
                 "psr/http-server-handler": "^1.0"
@@ -274,7 +274,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-07-25T20:20:46+00:00"
+            "time": "2023-09-03T13:16:40+00:00"
         },
         {
             "name": "laminas/laminas-stratigility",
