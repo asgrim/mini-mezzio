@@ -1917,30 +1917,30 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.17.0",
+            "version": "3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "dd35c868075bad80b6718959740913e178eb4274"
+                "reference": "e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/dd35c868075bad80b6718959740913e178eb4274",
-                "reference": "dd35c868075bad80b6718959740913e178eb4274",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf",
+                "reference": "e85b29076c6216e7fc98e72b42dbe1bbc3b95ecf",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.1.0 || ~8.2.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "conflict": {
                 "zendframework/zend-stdlib": "*"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "^2.5",
-                "phpbench/phpbench": "^1.2.9",
-                "phpunit/phpunit": "^10.0.16",
+                "phpbench/phpbench": "^1.2.14",
+                "phpunit/phpunit": "^10.3.3",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.8"
+                "vimeo/psalm": "^5.15.0"
             },
             "type": "library",
             "autoload": {
@@ -1972,20 +1972,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-03-20T13:51:37+00:00"
+            "time": "2023-09-19T10:15:21+00:00"
         },
         {
             "name": "mezzio/mezzio-fastroute",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-fastroute.git",
-                "reference": "f18a46b3a301776e5cc559cf99d3ecc2554bbd69"
+                "reference": "118ef1009c7252dc408c28b3041f4b04751d7321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/f18a46b3a301776e5cc559cf99d3ecc2554bbd69",
-                "reference": "f18a46b3a301776e5cc559cf99d3ecc2554bbd69",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/118ef1009c7252dc408c28b3041f4b04751d7321",
+                "reference": "118ef1009c7252dc408c28b3041f4b04751d7321",
                 "shasum": ""
             },
             "require": {
@@ -1993,7 +1993,7 @@
                 "laminas/laminas-stdlib": "^3.1",
                 "mezzio/mezzio-router": "^3.14",
                 "nikic/fast-route": "^1.2",
-                "php": "~8.1.0 || ~8.2.0",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
                 "psr/container": "^1.0 || ^2.0",
                 "psr/http-message": "^1.0.1 || ^2.0.0"
             },
@@ -2003,12 +2003,12 @@
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.5.0",
-                "laminas/laminas-diactoros": "^3.0.0",
-                "laminas/laminas-stratigility": "^3.9",
+                "laminas/laminas-diactoros": "^3.3.0",
+                "laminas/laminas-stratigility": "^3.11",
                 "mikey179/vfsstream": "^1.6.11",
-                "phpunit/phpunit": "^10.1.2",
+                "phpunit/phpunit": "^10.4.2",
                 "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.11"
+                "vimeo/psalm": "^5.15"
             },
             "type": "library",
             "extra": {
@@ -2050,7 +2050,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-05-12T13:02:38+00:00"
+            "time": "2023-11-01T11:16:57+00:00"
         },
         {
             "name": "myclabs/deep-copy",
