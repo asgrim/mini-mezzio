@@ -138,3 +138,40 @@ We've updated several things here, using the power of Laminas Service Manager:
  - The route `GET /hello-world` is mapped to `\MyApp\Handler\HelloWorldHandler`
    that we created above; again, since this is a string, the instance is
    fetched from the container.
+
+If you prefer, you can initialise the `ServiceManager` instance directly, instead of calling the helper methods, as in the example below:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Laminas\ServiceManager\AbstractFactory\ReflectionBasedAbstractFactory;
+use Laminas\ServiceManager\ServiceManager;
+use Asgrim\MiniMezzio\AppFactory;
+use Mezzio\Router\FastRouteRouter;
+use Mezzio\Router\Middleware\DispatchMiddleware;
+use Mezzio\Router\Middleware\RouteMiddleware;
+use Mezzio\Router\RouterInterface;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$container = new ServiceManager([
+    'abstract_factories' => [
+        ReflectionBasedAbstractFactory::class,
+    ],
+    'factories'          => [
+        RouterInterface::class => fn () => new FastRouteRouter(),
+    ],
+]);
+
+$app = AppFactory::create($container, $container->get(RouterInterface::class));
+$app->pipe(RouteMiddleware::class);
+$app->pipe(DispatchMiddleware::class);
+$app->get('/hello-world', \MyApp\Handler\HelloWorldHandler::class);
+$app->run();
+```
+
+Check out [the official documentation][laminas-servicemanager-config] if you'd like to know more about configuring the `ServiceManager` object.
+
+[laminas-servicemanager-config]: https://docs.laminas.dev/laminas-servicemanager/v4/configuring-the-service-manager/
