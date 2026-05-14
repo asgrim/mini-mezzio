@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  coding-standards:
+    name: "Coding Standards"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version:
+          - "8.4"
+          - "8.5"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+      - uses: ramsey/composer-install@v4
+      - run: vendor/bin/phpcs
+
+  static-analysis:
+    name: "Static Analysis"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version:
+          - "8.4"
+          - "8.5"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+      - uses: ramsey/composer-install@v4
+      - run: vendor/bin/phpstan
+
+  unit-tests:
+    name: "Unit Tests"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dependencies:
+          - "lowest"
+          - "highest"
+          - "locked"
+        php-version:
+          - "8.4"
+          - "8.5"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: bcmath, curl, dom, intl, json, mbstring, pdo, pdo_mysql, xml, zip
+          coverage: none
+      - uses: ramsey/composer-install@v4
+        with:
+          dependency-versions: ${{ matrix.dependencies }}
+      - run: vendor/bin/phpunit
