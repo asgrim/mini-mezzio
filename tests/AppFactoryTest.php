@@ -8,6 +8,7 @@ use Asgrim\MiniMezzio\AppFactory;
 use Laminas\Diactoros\Response\TextResponse;
 use Mezzio\Router\Route;
 use Mezzio\Router\RouterInterface;
+use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -17,6 +18,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 /** @covers \Asgrim\MiniMezzio\AppFactory */
 final class AppFactoryTest extends TestCase
 {
+    #[AllowMockObjectsWithoutExpectations]
     public function testCreatesApplication(): void
     {
         $container = $this->createMock(ContainerInterface::class);

@@ -22,7 +22,7 @@ use function uniqid;
 /** @coversNothing */
 final class AppFactoryIntegrationTest extends TestCase
 {
-    private const HANDLER_CONTAINER_KEY = 'MyHandlerContainerKey';
+    private const string HANDLER_CONTAINER_KEY = 'MyHandlerContainerKey';
 
     /**
      * Separate process needed because the SapiEmitter sends headers and headers are always already sent.
